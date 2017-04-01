@@ -4,7 +4,7 @@ sudo yum update
 sudo yum install git
 
 ## install redis
-git clone git@gist.github.com:ff9461bfda8ebfdc488e.git
+git clone https://gist.github.com/2776679.git
 chmod 777 install-redis.sh
 ./install-redis.sh
 
