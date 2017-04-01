@@ -35,7 +35,7 @@ npm -v
 
 ## leptonica
 cd ~/libs
-http://www.leptonica.com/source/leptonica-1.74.1.tar.gz
+wget http://www.leptonica.com/source/leptonica-1.74.1.tar.gz
 tar -zxvf leptonica-1.74.1.tar.gz
 cd leptonica-1.74.1
 ./configure
