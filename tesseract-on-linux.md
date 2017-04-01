@@ -8,7 +8,7 @@ git clone https://gist.github.com/2776679.git<br/>
 chmod 777 install-redis.sh<br/>
 ./install-redis.sh<br/>
 
-##libraries required to compile tesseract
+## libraries required to compile tesseract
 sudo yum install gcc-c++ make<br/>
 sudo yum install openssl-devel<br/>
 sudo yum install autoconf aclocal automake<br/>
