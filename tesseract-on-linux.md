@@ -66,6 +66,6 @@ cd ~<br/>
 sudo nano .bash_profile<br/>
 export TESSDATA_PREFIX=/usr/local/share/<br/>
 save and quit<br/>
-
+source .bash_profile
 
 credits to https://gist.github.com/shantanusingh/6526664
