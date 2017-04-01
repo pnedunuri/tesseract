@@ -53,5 +53,19 @@ make
 sudo make install
 sudo ldconfig
 
+## Tesseract Training data -- tessdata
+cd /usr/local/share/tessdata
+## tessdata for tesseract version < 4
+sudo wget https://github.com/tesseract-ocr/tessdata/archive/3.04.00.zip
+sudo unzip tessdata-3.04.00.zip
+sudo mv tessdata-3.04.00/*.* .
+sudo rm tessdata-3.04.00
+
+## SET TESSDATA_PREFIX PATH
+cd ~
+sudo nano .bash_profile
+export TESSDATA_PREFIX=/usr/local/share/
+save and quit
+
 
 credits to https://gist.github.com/shantanusingh/6526664
