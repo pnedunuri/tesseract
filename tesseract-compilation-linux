@@ -16,7 +16,7 @@ sudo yum install libtool
 sudo yum install libjpeg-devel libpng-devel libtiff-devel zlib-devel
 
 
-## install nodejs for any future dependencies reference: https://github.com/nodejs/node/blob/master/BUILDING.md
+## install nodejs for any future dependencies, for reference: https://github.com/nodejs/node/blob/master/BUILDING.md
 cd ~
 mkdir libs && cd libs
 git clone https://github.com/nodejs/node.git
