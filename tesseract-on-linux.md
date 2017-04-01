@@ -58,7 +58,7 @@ cd /usr/local/share/tessdata<br/>
 ## tessdata for tesseract version < 4
 sudo wget https://github.com/tesseract-ocr/tessdata/archive/3.04.00.zip<br/>
 sudo unzip tessdata-3.04.00.zip<br/>
-sudo mv tessdata-3.04.00/*.* .<br/>
+sudo mv tessdata-3.04.00/\*.\* .<br/>
 sudo rm tessdata-3.04.00<br/>
 
 ## SET TESSDATA_PREFIX PATH
