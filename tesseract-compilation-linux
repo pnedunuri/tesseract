@@ -1,0 +1,48 @@
+sudo yum update
+
+## install git
+sudo yum install git
+
+## install redis
+git clone git@gist.github.com:ff9461bfda8ebfdc488e.git
+chmod 777 install-redis.sh
+./install-redis.sh
+
+##libraries required to compile tesseract
+sudo yum install gcc-c++ make
+sudo yum install openssl-devel
+sudo yum install autoconf aclocal automake
+sudo yum install libtool
+sudo yum install libjpeg-devel libpng-devel libtiff-devel zlib-devel
+
+
+## install nodejs for any future dependencies reference: https://github.com/nodejs/node/blob/master/BUILDING.md
+cd ~
+mkdir libs && cd libs
+git clone https://github.com/nodejs/node.git
+cd node
+./configure
+make -j4
+sudo make install
+
+## set path
+sudo nano /etc/sudoers
+Defaults secure_path = /sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
+
+## verify nodejs installation
+node -v
+npm -v
+
+## leptonica
+cd ~/libs
+http://www.leptonica.com/source/leptonica-1.74.1.tar.gz
+tar -zxvf leptonica-1.74.1.tar.gz
+cd leptonica-1.74.1
+./configure
+make
+sudo make install
+
+## Tesseract
+cd ~/libs
+
+credits to https://gist.github.com/shantanusingh/6526664
